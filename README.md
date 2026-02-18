@@ -1,10 +1,9 @@
 # 🏗️ Tugas Praktikum Bootstrap
-
 Proyek tugas praktikum pembuatan website multi-tema menggunakan **Bootstrap** dengan tema layanan publik di **Kabupaten Bojonegoro, Jawa Timur**.
 
 ## 📋 Deskripsi
 
-Website ini terdiri dari 4 halaman HTML statis yang mendemonstrasikan penggunaan berbagai komponen Bootstrap 5:
+Website ini terdiri dari 4 halaman HTML statis yang mendemonstrasikan penggunaan berbagai komponen Bootstrap:
 
 | Halaman | File | Deskripsi |
 |---------|------|-----------|
@@ -15,9 +14,9 @@ Website ini terdiri dari 4 halaman HTML statis yang mendemonstrasikan penggunaan
 
 ## 🛠️ Teknologi
 
-- **HTML5** — Struktur halaman
-- **Bootstrap 5.3.3** — Framework CSS (CDN)
-- **Bootstrap Icons 1.11.3** — Ikon (CDN)
+- **HTML** — Struktur halaman
+- **Bootstrap** — Framework CSS (CDN)
+- **Bootstrap Icons** — Ikon (CDN)
 - **Google Fonts (Poppins)** — Tipografi
 
 ## 🎨 Komponen Bootstrap yang Digunakan
@@ -55,18 +54,7 @@ tugaspraktikumbootstrap/
 └── README.md            # Dokumentasi proyek
 ```
 
-## 🚀 Cara Menjalankan
-
-1. Clone repository ini:
-   ```bash
-   git clone https://github.com/username/tugas-praktikum-bootstrap.git
-   ```
-2. Buka `index.html` di browser, atau gunakan **Live Server** di VS Code.
-
-> **Note:** Tidak perlu instalasi tambahan. Semua library di-load melalui CDN.
-
 ## 📸 Preview
-
 Setiap halaman memiliki:
 - ✅ Navbar responsive dengan toggle
 - ✅ Header/Hero section dengan gradient premium

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Daerah Kab. Bojonegoro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .gradient-green {
+            background: linear-gradient(135deg, #0d7a3f 0%, #27ae60 40%, #2ecc71 100%);
+        }
+
+        .gradient-dark {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        }
+
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12) !important;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            margin: 10px auto 0;
+            background: linear-gradient(135deg, #0d7a3f, #2ecc71);
+            border-radius: 3px;
+        }
+
+        .btn-gradient-green {
+            background: linear-gradient(135deg, #0d7a3f, #27ae60);
+            border: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-gradient-green:hover {
+            background: linear-gradient(135deg, #27ae60, #0d7a3f);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark gradient-green">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="perpustakaan.html"><i class="bi bi-book me-2"></i>Perpus
+                Bojonegoro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPerpus">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarPerpus">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#katalog">Katalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#peminjam">Peminjam</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#peminjaman">Peminjaman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i
+                                class="bi bi-arrow-left me-1"></i>Kembali</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="beranda" class="gradient-green text-white py-5">
+        <div class="container py-3">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <span class="badge rounded-pill bg-dark bg-opacity-25 mb-3 px-3 py-2">
+                        <i class="bi bi-geo-alt-fill me-1"></i>Jl. Panglima Sudirman No. 56, Bojonegoro
+                    </span>
+                    <h1 class="display-4 fw-bold">Perpustakaan Daerah<br>Kab. Bojonegoro</h1>
+                    <p class="lead opacity-75">Membuka jendela ilmu pengetahuan untuk masyarakat Bojonegoro dan
+                        sekitarnya.</p>
+                    <a href="#peminjaman" class="btn btn-light btn-lg me-2 rounded-pill px-4 fw-semibold"><i
+                            class="bi bi-journal-plus me-1"></i>Pinjam Buku</a>
+                    <a href="#katalog" class="btn btn-outline-light btn-lg rounded-pill px-4"><i
+                            class="bi bi-search me-1"></i>Cari Buku</a>
+                </div>
+                <div class="col-md-4 text-center"><i class="bi bi-journal-bookmark"
+                        style="font-size: 10rem; opacity: 0.1;"></i></div>
+            </div>
+        </div>
+    </header>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4 section-title">Statistik Perpustakaan</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center h-100 border-0 shadow-sm card-hover">
+                        <div class="card-body p-4">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width:70px;height:70px;background:linear-gradient(135deg,#2ecc7120,#0d7a3f20);">
+                                <i class="bi bi-book" style="font-size:2rem;color:#0d7a3f;"></i>
+                            </div>
+                            <h3 class="fw-bold text-success">8.320</h3>
+                            <p class="text-muted small mb-0">Total Koleksi Buku</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center h-100 border-0 shadow-sm card-hover">
+                        <div class="card-body p-4">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width:70px;height:70px;background:linear-gradient(135deg,#2ecc7120,#0d7a3f20);">
+                                <i class="bi bi-people" style="font-size:2rem;color:#0d7a3f;"></i>
+                            </div>
+                            <h3 class="fw-bold text-success">2.150</h3>
+                            <p class="text-muted small mb-0">Anggota Aktif</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center h-100 border-0 shadow-sm card-hover">
+                        <div class="card-body p-4">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width:70px;height:70px;background:linear-gradient(135deg,#2ecc7120,#0d7a3f20);">
+                                <i class="bi bi-arrow-left-right" style="font-size:2rem;color:#0d7a3f;"></i>
+                            </div>
+                            <h3 class="fw-bold text-success">620</h3>
+                            <p class="text-muted small mb-0">Peminjaman Bulan Ini</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center h-100 border-0 shadow-sm card-hover">
+                        <div class="card-body p-4">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width:70px;height:70px;background:linear-gradient(135deg,#2ecc7120,#0d7a3f20);">
+                                <i class="bi bi-bookshelf" style="font-size:2rem;color:#0d7a3f;"></i>
+                            </div>
+                            <h3 class="fw-bold text-success">18</h3>
+                            <p class="text-muted small mb-0">Kategori Buku</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="katalog" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-2 section-title">Katalog Buku</h2>
+            <p class="text-center text-muted mb-4">Koleksi buku yang tersedia di Perpustakaan Daerah Bojonegoro</p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped align-middle">
+                    <thead style="background: linear-gradient(135deg, #0d7a3f, #27ae60); color: white;">
+                        <tr>
+                            <th>Kode</th>
+                            <th>Judul Buku</th>
+                            <th>Pengarang</th>
+                            <th>Penerbit</th>
+                            <th>Tahun</th>
+                            <th>Kategori</th>
+                            <th>Stok</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BK-001</td>
+                            <td>Laskar Pelangi</td>
+                            <td>Andrea Hirata</td>
+                            <td>Bentang Pustaka</td>
+                            <td>2005</td>
+                            <td><span class="badge bg-success rounded-pill">Novel</span></td>
+                            <td>5</td>
+                            <td><span class="badge bg-success rounded-pill">Tersedia</span></td>
+                        </tr>
+                        <tr>
+                            <td>BK-002</td>
+                            <td>Bumi Manusia</td>
+                            <td>Pramoedya A. Toer</td>
+                            <td>Hasta Mitra</td>
+                            <td>1980</td>
+                            <td><span class="badge bg-success rounded-pill">Novel</span></td>
+                            <td>3</td>
+                            <td><span class="badge bg-success rounded-pill">Tersedia</span></td>
+                        </tr>
+                        <tr>
+                            <td>BK-003</td>
+                            <td>Algoritma dan Pemrograman</td>
+                            <td>Rinaldi Munir</td>
+                            <td>Informatika</td>
+                            <td>2016</td>
+                            <td><span class="badge bg-primary rounded-pill">Teknik</span></td>
+                            <td>0</td>
+                            <td><span class="badge bg-danger rounded-pill">Habis</span></td>
+                        </tr>
+                        <tr>
+                            <td>BK-004</td>
+                            <td>Sejarah Bojonegoro</td>
+                            <td>Tim Penulis Daerah</td>
+                            <td>Pemkab Bojonegoro</td>
+                            <td>2018</td>
+                            <td><span class="badge bg-warning text-dark rounded-pill">Sejarah</span></td>
+                            <td>4</td>
+                            <td><span class="badge bg-success rounded-pill">Tersedia</span></td>
+                        </tr>
+                        <tr>
+                            <td>BK-005</td>
+                            <td>Filsafat Ilmu</td>
+                            <td>Jujun S. Suriasumantri</td>
+                            <td>Pustaka Sinar Harapan</td>
+                            <td>2009</td>
+                            <td><span class="badge bg-info rounded-pill">Filsafat</span></td>
+                            <td>1</td>
+                            <td><span class="badge bg-warning text-dark rounded-pill">Terbatas</span></td>
+                        </tr>
+                        <tr>
+                            <td>BK-006</td>
+                            <td>Fisika Dasar</td>
+                            <td>Halliday & Resnick</td>
+                            <td>Erlangga</td>
+                            <td>2014</td>
+                            <td><span class="badge bg-secondary rounded-pill">Sains</span></td>
+                            <td>4</td>
+                            <td><span class="badge bg-success rounded-pill">Tersedia</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="peminjam" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-2 section-title">Data Peminjaman Aktif</h2>
+            <p class="text-center text-muted mb-4">Daftar peminjaman buku yang sedang berlangsung</p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Peminjam</th>
+                            <th>No. Anggota</th>
+                            <th>Judul Buku</th>
+                            <th>Tgl Pinjam</th>
+                            <th>Tgl Kembali</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Rudi Hartono</td>
+                            <td>AG-201</td>
+                            <td>Laskar Pelangi</td>
+                            <td>10 Feb 2026</td>
+                            <td>24 Feb 2026</td>
+                            <td><span class="badge bg-primary rounded-pill">Dipinjam</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dewi Lestari</td>
+                            <td>AG-202</td>
+                            <td>Algoritma dan Pemrograman</td>
+                            <td>05 Feb 2026</td>
+                            <td>19 Feb 2026</td>
+                            <td><span class="badge bg-danger rounded-pill">Terlambat</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ahmad Fauzi</td>
+                            <td>AG-203</td>
+                            <td>Bumi Manusia</td>
+                            <td>15 Feb 2026</td>
+                            <td>01 Mar 2026</td>
+                            <td><span class="badge bg-primary rounded-pill">Dipinjam</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Ningsih Rahayu</td>
+                            <td>AG-204</td>
+                            <td>Sejarah Bojonegoro</td>
+                            <td>12 Feb 2026</td>
+                            <td>26 Feb 2026</td>
+                            <td><span class="badge bg-primary rounded-pill">Dipinjam</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="peminjaman" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center fw-bold mb-2 section-title">Formulir Peminjaman Buku</h2>
+                    <p class="text-center text-muted mb-4">Isi formulir berikut untuk meminjam buku dari Perpustakaan
+                        Daerah Bojonegoro</p>
+                    <div class="card shadow border-0 overflow-hidden">
+                        <div class="card-header py-3 text-white"
+                            style="background: linear-gradient(135deg, #0d7a3f, #27ae60);">
+                            <h5 class="mb-0"><i class="bi bi-journal-plus me-2"></i>Data Peminjaman</h5>
+                        </div>
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="namaPeminjam" class="form-label fw-semibold">Nama Peminjam</label>
+                                        <input type="text" class="form-control" id="namaPeminjam"
+                                            placeholder="Masukkan nama lengkap">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="noAnggota" class="form-label fw-semibold">No. Anggota</label>
+                                        <div class="input-group"><span class="input-group-text">AG-</span><input
+                                                type="text" class="form-control" id="noAnggota" placeholder="201"></div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label fw-semibold">Email</label>
+                                        <div class="input-group"><span class="input-group-text"><i
+                                                    class="bi bi-envelope"></i></span><input type="email"
+                                                class="form-control" id="email" placeholder="email@contoh.com"></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="noTelp" class="form-label fw-semibold">No. Telepon</label>
+                                        <div class="input-group"><span class="input-group-text"><i
+                                                    class="bi bi-telephone"></i></span><input type="tel"
+                                                class="form-control" id="noTelp" placeholder="08xxxxxxxxxx"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="judulBuku" class="form-label fw-semibold">Judul Buku</label>
+                                    <select class="form-select" id="judulBuku">
+                                        <option selected disabled>-- Pilih Buku --</option>
+                                        <option>Laskar Pelangi</option>
+                                        <option>Bumi Manusia</option>
+                                        <option>Sejarah Bojonegoro</option>
+                                        <option>Filsafat Ilmu</option>
+                                        <option>Fisika Dasar</option>
+                                    </select>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="tglPinjam" class="form-label fw-semibold">Tanggal Peminjaman</label>
+                                        <input type="date" class="form-control" id="tglPinjam">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="durasi" class="form-label fw-semibold">Durasi</label>
+                                        <select class="form-select" id="durasi">
+                                            <option selected disabled>-- Pilih --</option>
+                                            <option>7 Hari</option>
+                                            <option>14 Hari</option>
+                                            <option>21 Hari</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="catatan" class="form-label fw-semibold">Catatan</label>
+                                    <textarea class="form-control" id="catatan" rows="2"
+                                        placeholder="Catatan tambahan (opsional)"></textarea>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="setuju">
+                                    <label class="form-check-label" for="setuju">Saya setuju dengan peraturan peminjaman
+                                        perpustakaan</label>
+                                </div>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="reset" class="btn btn-outline-secondary me-md-2 rounded-pill px-4"><i
+                                            class="bi bi-arrow-counterclockwise me-1"></i>Reset</button>
+                                    <button type="submit" class="btn btn-gradient-green rounded-pill px-4"><i
+                                            class="bi bi-journal-check me-1"></i>Ajukan Peminjaman</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="gradient-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold"><i class="bi bi-book me-2"></i>Perpus Daerah Bojonegoro</h5>
+                    <p class="text-white-50 small">Perpustakaan Daerah Kabupaten Bojonegoro — Pusat literasi dan ilmu
+                        pengetahuan masyarakat Bojonegoro, Jawa Timur.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle"
+                            style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle"
+                            style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle"
+                            style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;"><i
+                                class="bi bi-globe"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-semibold mb-3">Kontak</h6>
+                    <ul class="list-unstyled small text-white-50">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Jl. Panglima Sudirman No. 56, Bojonegoro
+                            62111</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>(0353) 882-345</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i>perpustakaan@bojonegoro.go.id</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-semibold mb-3">Jam Buka</h6>
+                    <ul class="list-unstyled small text-white-50">
+                        <li class="mb-2"><i class="bi bi-clock me-2"></i>Senin - Jumat: 08:00 - 20:00</li>
+                        <li class="mb-2"><i class="bi bi-clock me-2"></i>Sabtu: 08:00 - 16:00</li>
+                        <li class="mb-2"><i class="bi bi-clock me-2"></i>Minggu: Tutup</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary opacity-25">
+            <div class="text-center small text-white-50">
+                <p class="mb-0">&copy; 2026 Perpustakaan Daerah Kab. Bojonegoro | Tugas Bootstrap — HUMMATECH</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
